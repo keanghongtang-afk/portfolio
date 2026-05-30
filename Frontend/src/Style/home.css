@@ -1,0 +1,60 @@
+body{
+    background: linear-gradient(to bottom, white, rgba(11, 255, 255, 0.808));
+}
+
+.profile {
+    width: 300px;
+    margin-left: auto;margin-right: auto;
+}
+
+.profile > p {text-align: center;font-size: 25px;font-family: Impact;}
+
+.profile-card {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card img{
+    border-top-left-radius: 10px;border-top-right-radius: 10px;
+}
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me h3, .about-me h4 {
+    font-size: 50px;
+    text-align: center;
+    color: rgb(240, 249, 249);
+    text-shadow: 2px 2px 5px black;
+}
+
+.about-me p {
+    width: 60%;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+@media (max-width: 768px) {
+    .about-me h3, .about-me h4 {
+    font-size: 30px;
+    text-align: center;
+    color: rgb(240, 249, 249);
+    text-shadow: 2px 2px 5px black;
+    }
+    .about-me p {
+        width: 60%;
+        text-align: center;
+        font-size: 30px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+}
