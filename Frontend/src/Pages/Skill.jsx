@@ -1,5 +1,5 @@
-import { Code2, Database, Palette, Server, Smartphone, Zap } from "lucide-react";
-import "./Style/skill.css"
+import { Code2, Database, Palette, Server,Zap, Smartphone } from "lucide-react";
+import "../Style/skill.css"
 
 export default function Skill(){
 
@@ -20,20 +20,20 @@ export default function Skill(){
             description: "PostgreSQL, MongoDB",
           },
           {
-            icon: <Smartphone className="icon2"/>,
-            title: "Mobile Development",
-            description: "React Native, Progressive Web Apps, Kotlin",
-          },
-          {
             icon: <Palette className="icon2"/>,
             title: "UI/UX Design",
             description: "Figma, Design Systems, Accessibility",
           },
           {
+            icon: <Smartphone className="icon2"/>,
+            title: "Mobile Development",
+            description: "None",
+            },
+        {
             icon: <Zap className="icon2"/>,
             title: "Performance Optimization",
             description: "Web Vitals, Code Splitting, Caching",
-          },
+        },
         ];
 
     const techs = [
@@ -43,7 +43,7 @@ export default function Skill(){
             ];
     return (
         <>
-            <div className="skill-section">
+            <div className="skill-section" id="skill">
                 <div className="contain-text">
                     <p className="header-box">Skills & Expertise</p>
                     <h1>What I bring to the table</h1>

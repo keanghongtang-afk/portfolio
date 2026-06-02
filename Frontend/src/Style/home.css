@@ -61,20 +61,6 @@ body{
 
 .profile > p {text-align: center;font-size: 25px;font-family: Impact;}
 
-.profile-card {
-    border: 2px solid black;
-    border-radius: 10px;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.profile-card img{
-    border-top-left-radius: 10px;border-top-right-radius: 10px;
-}
-
 .idea{
     display: flex;
     flex-direction: column;
@@ -176,19 +162,20 @@ body{
 }
 
 .section1:nth-child(1) {
-    width: 50%;
+    width: 25%;
     height: 75%;
 }
 
 .section1:nth-child(2) {
     flex: 1;
   height: 75%;
-  width: 0%;
+  width: 0;
 }
 
 .contain-img {
     position: relative;
     background: #f5f7ff;
+    box-sizing: border-box;
     border-radius: 20px;
     padding: 20px;
     overflow: hidden;
@@ -202,7 +189,7 @@ body{
 .exp {
     position: absolute;
     bottom: 5px;
-    right: 10px;
+    right: 5px;
 
     background: white;
     padding: 20px 25px;
@@ -214,6 +201,7 @@ body{
 
 .contain-text{
     max-width: 625px;
+    text-align: center;
 }
 
 .contain-text .contain-exp{
@@ -230,12 +218,16 @@ body{
 .contain-text .contain-exp .box0 {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .contain-text .contain-exp .box1 {
     border: 2px solid black;
     border-radius: 25px;
     width: 225px;
+    height: 125px;
     margin: 5px;
     padding: 10px;
     box-shadow: 0px 0px 5px black;
@@ -266,5 +258,18 @@ body{
         text-align: center;
         font-size: 30px;
         font-family: 'Times New Roman', Times, serif;
+    }
+
+    .contain-img{
+        width: 95%;
+    }
+
+    .contain-text{
+        box-sizing: border-box;
+        max-width: 450px; 
+    }
+
+    .contain-text .contain-exp .box1 {
+        width: 175px;
     }
 }

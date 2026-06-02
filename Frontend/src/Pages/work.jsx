@@ -1,5 +1,5 @@
-import "./Style/work.css"
-import ecommerce from "./assets/ecommerce.png"
+import "../Style/work.css"
+import ecommerce from "../assets/ecommerce.png"
 import { FaGithub } from "react-icons/fa";
 export default function Work(){
     var projects = [
@@ -13,7 +13,7 @@ export default function Work(){
         }
     ];
     return (
-        <div className="work-section">
+        <div className="work-section" id="project">
             <div className="header-box">Projects</div>
             <h1>The Best Projects of all my projects</h1>
             <p>A selection of recent work that showcases my approach to problem-solving and design</p>
@@ -21,7 +21,7 @@ export default function Work(){
                 return (
                     <div className="project">
                         <div className="image">
-                            <img src={project.image} alt="project" width={500} className="project-img"/>
+                            <img src={project.image} alt="project" className="project-img"/>
                             <a href={project.github} className="git"><FaGithub/></a>
                         </div>
                         <h3>{project.title}</h3>

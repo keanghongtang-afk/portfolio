@@ -1,28 +1,11 @@
 //import profile_pic from "./assets/demo-profile.jpg"
-import './Style/home.css'
-import program_img from "./assets/program_image.jpg"
+import '../Style/home.css'
+import program_img from "../assets/program_image.jpg"
 import { FaGithub, FaLinkedin, FaMailBulk } from "react-icons/fa";
 import { FaArrowRight } from "react-icons/fa";
+//import { Profiler } from 'react';
 
 export default function Home(){
-    /*var status = false;
-
-    const calculateAge = () => {
-        const today = new Date();
-        const birth = new Date("2007-11-13");
-
-        let age = today.getFullYear() - birth.getFullYear();
-
-        const monthDifference = today.getMonth() - birth.getMonth();
-
-        if (
-            monthDifference < 0 ||
-            (monthDifference === 0)
-        ) {
-            age--;
-        }
-        return age;
-    };*/
     var technologies = ["Python","Javascript","C++","Html","CSS","React.JS","Bootstrap","FastApi"];
     var projects = ["Ecommerce Platform"];
     
@@ -35,12 +18,12 @@ export default function Home(){
                 <p>Full-stack developer & gamer passionate about building elegant, performant, and user-centered web applications</p>
             </div>
             <div className="btn">
-                <button className='view' href="#project">View Project <FaArrowRight></FaArrowRight></button>
-                <button className='contact' href="#contact">Get In Touch</button>
+                <a href="#project"><button className='view'>View Project <FaArrowRight></FaArrowRight></button></a>
+                <a href="#contact"><button className='contact'>Get In Touch</button></a>
             </div>
             <div className="icon">
                 <a href="https://github.com/keanghongtang-afk"><FaGithub size={30} className="ic"></FaGithub></a>
-                <a href="https://www.linkedin.com/feed/"><FaLinkedin size={30} className="ic"></FaLinkedin></a>
+                <a href="https://www.linkedin.com/in/keanghong-tang-995719411/"><FaLinkedin size={30} className="ic"></FaLinkedin></a>
                 <a href="mailto:keanghongtang@gmail.com"><FaMailBulk size={30} className="ic"></FaMailBulk></a>
             </div>
             <div className="ellipse">

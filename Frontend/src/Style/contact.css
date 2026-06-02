@@ -1,0 +1,128 @@
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.contact-section > p, .contact-section > h3{
+    text-align: center;
+}
+
+.info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.info-box {
+    width: 350px;
+    height: 100px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    border-radius: 25px;
+    gap: 25px;
+    margin: 10px;
+    background-color: white;
+}
+
+.availablity {
+    width: 350px;
+    height: fit-content;
+    border: 2px solid black;
+    border-radius: 25px;
+    padding: 10px;
+    background: linear-gradient(to left, rgba(155, 232, 155, 0.235), rgba(78, 253, 253, 0.249));
+}
+
+.availablity.No {
+     background: linear-gradient(to left, rgba(232, 155, 155, 0.831), rgba(255, 134, 5, 0.249));
+}
+
+.on {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: darkgreen;
+}
+
+.off {
+    display: inline-block;
+    width: 10px;height: 10px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.message-form {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.input-box {
+    position: relative;
+}
+
+#name, #email, #message {
+    width: 90%;
+    padding: 10px;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+.input-box label {
+    position: absolute;
+    left: 15px;
+    top: 40%;
+    transform: translateY(-50%);
+
+    background: white;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: gray;
+    pointer-events: none;
+
+    transition: 0.3s ease;
+}
+
+.input-box input:focus + label,
+.input-box input:valid + label {
+    top: 5px;
+    font-size: 12px;
+    color: black;
+}
+
+.btn-submit {
+    width: 90%;
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 5px;
+}
+
+.container-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.container-info .message-form{
+    width: 70%;
+    height: 500px;
+    box-sizing: border-box;
+}

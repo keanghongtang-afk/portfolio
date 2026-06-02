@@ -1,7 +1,10 @@
-import Navbar from './Navbar';
-import Home from './Home';
-import Skill from './Skill';
-import Work from './work';
+import Navbar from './Pages/Navbar';
+import Home from './Pages/Home';
+import Skill from './Pages/Skill';
+import Work from './Pages/work';
+import Education from './Pages/education';
+import Contact from './Pages/contact';
+import Footer from './Pages/footer';
 import './Style/App.css';
 
 export default function App(){
@@ -12,6 +15,9 @@ export default function App(){
       <Home />
       <Skill />
       <Work />
+      <Education />
+      <Contact />
+      <Footer />
     </div>
   );
 }

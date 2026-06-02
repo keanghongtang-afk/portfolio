@@ -1,0 +1,82 @@
+.edu-section {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.edu-section > h3{
+    text-align: center;
+    font-size: 25px;
+}
+
+.header-box {
+    width: fit-content;
+}
+
+
+.contain-work, .contain-edu {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    margin: 10px;
+}
+
+.box-work , .box-edu {
+    margin-left: auto;margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 25px;
+    box-sizing: border-box;
+    width: 80%;
+    padding: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.box-edu:hover, .box-work:hover {
+    box-shadow: 2px 2px 5px black;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+
+.skill-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.skill-box {
+    border-radius: 25px;
+    padding: 10px;
+    background-color: rgb(245, 245, 245);
+    position: relative;
+    overflow: hidden;
+    transition: border 0.3s ease;
+
+    border: 2px solid transparent;
+}
+
+.box-edu:hover .skill-box, .box-work:hover .skill-box {
+    border-color:black;
+}
+
+.icon-exp {
+    border-radius: 10px;
+    background-color:rgb(255, 255, 255);
+    padding: 10px;
+    box-shadow: 2px 2px 5px black;
+}
