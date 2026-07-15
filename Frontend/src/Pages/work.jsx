@@ -16,12 +16,12 @@ export default function Work(){
         <div className="work-section" id="project">
             <div className="header-box">Projects</div>
             <h1>The Best Projects of all my projects</h1>
-            <p>A selection of recent work that showcases my approach to problem-solving and design</p>
+            <p>A selection of recent work that showcases my approach to problem-solving and design<br/>(You can click on the image to go to my project)</p>
             {projects.map(project => {
                 return (
                     <div className="project">
                         <div className="image">
-                            <img src={project.image} alt="project" className="project-img"/>
+                            <a href="https://realestate-hong.netlify.app/"><img src={project.image} alt="project" className="project-img"/></a>
                             <a href={project.github} className="git"><FaGithub/></a>
                         </div>
                         <h3>{project.title}</h3>
